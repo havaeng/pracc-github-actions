@@ -16,3 +16,6 @@ Desktop.ini
 
 # Linux
 *~
+
+# Node
+node_modules/
