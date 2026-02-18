@@ -1,4 +1,11 @@
-name: 04-actions.yaml
-on:
+name: 04-using-actions.yaml
+on: push
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.3.1
+      - name: Printing Folders
+        run: ls -la
