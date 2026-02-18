@@ -19,6 +19,8 @@ jobs:
           ls -la 04-using-actions/react-app
           test -f 04-using-actions/react-app/package.json && echo "package.json exists"
           test -f 04-using-actions/react-app/package-lock.json && echo "package-lock.json exists"
+      - name: Use npm 11
+        run: npm i -g npm@11
       - name: Install dependencies
         working-directory: ./04-using-actions/react-app
         run: npm ci
